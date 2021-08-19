@@ -41,9 +41,14 @@ except FileExistsError:
 
 TODO:
 
-[ ] Write readme 
-[ ] Write docstrings 
-[ ] Add more stuff
+Priority:
+* [ ] Make a package
+
+Meh:
+
+* [ ] Update readme 
+* [ ] Add docstrings 
+* [ ] Add more stuff
 
 ## Warning
 
