@@ -121,6 +121,9 @@ ENV/
 .idea/**/gradle.xml
 .idea/**/libraries
 
+# Idea hack
+.idea/
+
 # CMake
 cmake-build-debug/
 
