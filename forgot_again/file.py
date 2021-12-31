@@ -1,6 +1,6 @@
 from ast import literal_eval
-from os import remove, makedirs
-from os.path import isfile, isdir
+from os import remove, makedirs, listdir
+from os.path import isfile, isdir, join
 from pprint import pprint
 from subprocess import Popen
 
@@ -29,3 +29,10 @@ def make_dirs(path):
 
 def open_explorer_at(path):
     Popen(f'explorer /select,"{path}"')
+
+
+def list_dirs(path, full=False):
+    for d in listdir(path):
+        d_full = join(path, d)
+        if isdir(d_full):
+            yield d_full if full else d
